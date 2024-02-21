@@ -18,7 +18,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('/git-pull', function (Request $request) {
-    $process = new Process(['/www/wwwroot/system.hostracerindia.in','git','pull']);
+    $process = new Process(['git','pull']);
     return $process->run();
 
 });
