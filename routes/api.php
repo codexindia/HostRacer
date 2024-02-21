@@ -23,7 +23,7 @@ Route::get('/git-pull', function (Request $request) {
     return $result;
 
 });
-// Route::get('/', function (Request $request) {
-//     return "Hello World";
+Route::get('/', function (Request $request) {
+    return "Hello World";
 
-// });
+});
