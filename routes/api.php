@@ -22,3 +22,7 @@ Route::get('/git-pull', function (Request $request) {
     return $process->run();
 
 });
+Route::get('/', function (Request $request) {
+    return "Hello World";
+
+});
