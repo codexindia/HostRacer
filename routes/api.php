@@ -19,7 +19,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::get('/git-pull', function (Request $request) {
     $process = new Process(['git','pull']);
-    return $process->run();
+   $result = $process->run();
+    return $result;
 
 });
 // Route::get('/', function (Request $request) {
